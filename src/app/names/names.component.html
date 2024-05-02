@@ -1,0 +1,13 @@
+<div>
+  <label for="names">სახელი</label>
+  <input type="text" id="names" />
+  <button (click)="addElement()">დამატება</button>
+</div>
+<div id="divBox">
+  <p
+    *ngFor="let item of myName; let i = index"
+    [ngStyle]="{ backgroundColor: i === 0 ? 'red' : 'green' }"
+  >
+    {{ i + 1 + ". " + item }}
+  </p>
+</div>
