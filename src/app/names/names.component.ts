@@ -19,4 +19,11 @@ export class NamesComponent {
 
     (document.getElementById('names') as HTMLInputElement).value = '';
   }
+  getRandomColor(i: number) {
+    if (i % 2 == 0) {
+      return 'red';
+    } else {
+      return 'green';
+    }
+  }
 }
